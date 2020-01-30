@@ -1,0 +1,50 @@
+﻿@model LibraryManagementSystem.Models.Member
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Member</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeOfMembership)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeOfMembership)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsStudent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsStudent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpiryDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpiryDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

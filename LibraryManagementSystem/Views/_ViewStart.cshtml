@@ -1,0 +1,14 @@
+﻿@{
+    if (Session["TypeofUser"] != null)
+    {
+        if (Session["TypeofUser"].ToString() == "Admin")
+        {
+            Layout = "~/Views/Shared/_Layout.cshtml";
+        }
+        else
+        {
+            Layout = "~/Views/Shared/_UserLayout.cshtml";
+        }
+    }
+
+}
